@@ -29,6 +29,12 @@ var c=document.Login.repwd.value;
 console.log(a+b+c);
 if(a==""|| b==""|| c=="")
 alert("field cannot be blank");
+else if(b.length<6)
+alert("password should be greater than 6");
+else if(b!=c)
+alert("password not match");
+else
+alert("login successfully");
 }
 validate();
 </script>
